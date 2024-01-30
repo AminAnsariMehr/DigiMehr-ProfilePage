@@ -1,0 +1,95 @@
+@import url(../assets/spacing.css);
+@import url(./colors.css);
+@import url(./sizes.css);
+@import url(./fonts.css);
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    direction: rtl;
+    font-family: IRANYekanWeb;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    padding-bottom: var(--space-48);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+/*----------------------------------------------- Start Of NavBar -----------------------------------------------*/
+.navBar{
+    width: 100%;
+    padding: var(--space-16) ;
+    background: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.digiMehrLogoTitleWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-10);
+}
+
+.digiMehrLogoWrapper__wrapperLogo{
+    width: 32px;
+    height: 30px;
+    background:var(--color-primary) ;
+    border-radius: 2px 12px 12px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digiMehrLogoWrapper__insideLogo{
+    width: 19.79px;
+    height: 17.48px;
+}
+
+.digiMehrLogoWrapper__titleName{
+    width: 141.35px;
+    height: 20.6px;    
+}
+
+.signInProfileBtn{
+    padding: 5px var(--space-16);
+    background: var(--color-white);
+    border: 1px solid var(--color-N200);
+    border-radius: var(--space-8);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-12);
+}
+
+.signInProfileBtn__signInIcon{
+    font-size: var(--font-size-normal);
+}
+
+.signInProfileBtn__text{
+    font-weight: 400;
+    font-size: var(--font-size-tiny);
+    line-height: 26px;
+}
+
+/*------------------------------------------------ End Of NavBar ------------------------------------------------*/
