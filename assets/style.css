@@ -12,7 +12,7 @@
     outline: none;
     border: none;
     direction: rtl;
-    font-family: IRANYekanWeb;
+    font-family: Yekan;
 }
 
 body {
@@ -29,48 +29,51 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: var(--space-24);
+    height: 3500px;
 }
 
 
 
 /*----------------------------------------------- Start Of NavBar -----------------------------------------------*/
-.navBar{
+.navBar {
     width: 100%;
-    padding: var(--space-16) ;
+    padding: var(--space-16);
     background: var(--color-white);
+    box-shadow: 1px 2px 30px 0px #00000014;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.digiMehrLogoTitleWrapper{
+.digiMehrLogoTitleWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: var(--space-10);
 }
 
-.digiMehrLogoWrapper__wrapperLogo{
+.digiMehrLogoWrapper__wrapperLogo {
     width: 32px;
     height: 30px;
-    background:var(--color-primary) ;
+    background: var(--color-primary);
     border-radius: 2px 12px 12px 1px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.digiMehrLogoWrapper__insideLogo{
+.digiMehrLogoWrapper__insideLogo {
     width: 19.79px;
     height: 17.48px;
 }
 
-.digiMehrLogoWrapper__titleName{
+.digiMehrLogoWrapper__titleName {
     width: 141.35px;
-    height: 20.6px;    
+    height: 20.6px;
 }
 
-.signInProfileBtn{
+.signInProfileBtn {
     padding: 5px var(--space-16);
     background: var(--color-white);
     border: 1px solid var(--color-N200);
@@ -82,14 +85,281 @@ body {
     gap: var(--space-12);
 }
 
-.signInProfileBtn__signInIcon{
+.signInProfileBtn__signInIcon {
     font-size: var(--font-size-normal);
 }
 
-.signInProfileBtn__text{
+.signInProfileBtn__text {
     font-weight: 400;
     font-size: var(--font-size-tiny);
     line-height: 26px;
 }
 
 /*------------------------------------------------ End Of NavBar ------------------------------------------------*/
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: green;
+    height: 3000px;
+}
+
+/*------------------------------------------- Start Of Profile Section -------------------------------------------*/
+.profileSection {
+    position: relative;
+    width: calc(100% - (var(--space-16) + var(--space-12) + var(--space-10)));
+    padding: var(--space-24);
+    border-radius: var(--space-12);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--space-20);
+
+    background: purple;
+}
+
+/* --- Start Of Inner Border --- */
+.innerBorder {
+    width: 100%;
+    height: 1px;
+    background: var(--color-border);
+}
+
+/* ---- End Of Inner Border ---- */
+
+
+.partnerProfileData {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background: yellow;
+}
+
+.partnerPersonalData {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--space-12);
+
+    background-color: deeppink;
+    /* padding: 0 10px; */
+}
+
+.partnerPersonalData__partnerAvatar {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--space-8);
+}
+
+.partnerPersonalData__partnerAvatar--notLoggedIn {
+    display: none;
+}
+
+.partnerPersonalDataWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-8);
+
+    /* background: aqua; */
+}
+
+.partnerPersonalData__partnerName {
+    color: var(--color-textDark);
+    font-size: var(--font-size-normal);
+    line-height: var(--space-24);
+    font-weight: 700;
+}
+
+.partnerPersonalData__partnerTelNumber {
+    color: var(--color-textLight);
+    font-size: var(--font-size-tiny);
+    line-height: var(--space-16);
+    font-weight: 400;
+}
+
+/*-------------------------------------------- End Of Profile Section --------------------------------------------*/
+
+
+
+/*------------------------------------------- Start Of Actived Project -------------------------------------------*/
+.partnerStatusProject {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--space-12);
+
+}
+
+.partnerStatusProject__headerStatus {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--space-8);
+
+    background-color: deeppink;
+}
+
+.partnerStatusProject__activeStatus {
+    width: 100%;
+    height: 88px;
+    background: aqua;
+}
+
+.partnerStatusProject__dispalyIconStatus {
+    width: 4px;
+    height: 16px;
+    background: var(--color-border);
+    border-radius: 2px 0px 0px 2px;
+}
+
+.partnerStatusProject__dispalyIconStatus--active {
+    background: var(--color-primary);
+}
+
+.partnerStatusProject__titleStatus {
+    color: var(--color-darkBlue);
+    font-size: var(--font-size-normal);
+    line-height: var(--space-24);
+    font-weight: 400;
+}
+
+.partnerStatusProject__activeStatus,
+.partnerStatusProject__expiredStatus,
+.partnerStatusProject__needChooseStatus{
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.partnerStatusProject__activeStatus{
+    gap: var(--space-24);
+}
+
+.currentProject,
+.partnerStatus__dataLogProject{
+    width: calc((100% - var(--space-24)) / 2);
+    padding: var(--space-16);
+    background: var(--color-white);
+    border: 1px solid var(--color-border) ;
+    border-radius: var(--space-8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    height: 100%;
+}
+
+.currentProject__projectOrganData{
+    width: 432px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--space-12);
+
+    height: 100%;
+}
+
+.currentProject__oraganLogoImage{
+    width: 48px;
+    height: 48px;
+    border-radius: var(--space-10);
+}
+
+
+.currentProject__dataTexts{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.currentProject__activeProjectName{
+    width: 372px;
+color:var(--color-N700) ;
+font-size: var(--font-size-normal) ;
+font-weight: 400;
+line-height: var(--space-24);
+}
+
+.currentProject__activeOraganName{
+    color: var(--color-textLight);
+    font-size: var(--font-size-tiny);
+    font-weight:400;
+    line-height:var(--space-20) ;
+}
+
+.currentProject__projectOptions{
+    height:60px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.currentProject__costTextProject{
+    font-size: var(--font-size-xxtiny);
+    color: var(--color-textLight);
+    font-weight: 400;
+    line-height: var(--space-12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.currentProject__dynamicNumberProjectNumber{
+    color: var(--color-textDark);
+    font-size: var(--font-size-tiny);
+    font-weight: 400;
+    line-height: var(--space-20);
+}
+
+.currentProject__changeBtns{
+    padding: var(--space-12) var(--space-16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-10);
+}
+
+
+.currentProject__editBtn,
+.currentProject__cancelBtn{
+    color: var(--color-primary);
+    font-size: var(--font-size-tiny);
+    line-height: var(--space-12);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.currentProject__cancelBtn{
+    position: relative;
+}
+
+.currentProject__cancelBtn::before{
+    content: ' ';
+    width: 1px;
+    height: 100%;
+    background: var(--color-primary);
+    position: absolute;
+    top: 0;
+    right: -50%;
+}
+
+
+
+/*-------------------------------------------- End Of Actived Project --------------------------------------------*/

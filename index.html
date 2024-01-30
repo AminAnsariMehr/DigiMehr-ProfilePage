@@ -1,31 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
     <div class="container">
 
         <!--------------------------- Start Of NavBar --------------------------->
-    <nav class="navBar">
-      <div class=" digiMehrLogoTitleWrapper">
-        <div class="digiMehrLogoWrapper__wrapperLogo">
-          <img class="digiMehrLogoWrapper__insideLogo" src="./assets/Image/Fillinside digimehr logo i.svg"
-            alt="digiLogo">
-        </div>
-        <img class="digiMehrLogoWrapper__titleName" src="./assets/Image/Digikala Mehr Brandingasa.svg"
-          alt="digiTitleName"/>
-      </div>
+        <nav class="navBar">
+            <div class=" digiMehrLogoTitleWrapper">
+                <div class="digiMehrLogoWrapper__wrapperLogo">
+                    <img class="digiMehrLogoWrapper__insideLogo" src="./assets/Image/Fillinside digimehr logo i.svg"
+                        alt="digiLogo">
+                </div>
+                <img class="digiMehrLogoWrapper__titleName" src="./assets/Image/Digikala Mehr Brandingasa.svg"
+                    alt="digiTitleName" />
+            </div>
 
-      <button class="signInProfileBtn">
-        <i class="fi fi-bs-enter signInProfileBtn__signInIcon"></i>
-        <span class="signInProfileBtn__text">پروفایل I ثبت نام</span>
-      </button>
-    </nav>
-    <!---------------------------- End Of NavBar ---------------------------->
+            <button class="signInProfileBtn">
+                <i class="fi fi-bs-enter signInProfileBtn__signInIcon"></i>
+                <span class="signInProfileBtn__text">پروفایل I ثبت نام</span>
+            </button>
+        </nav>
+        <!---------------------------- End Of NavBar ---------------------------->
+
+        <main class="main">
+
+            <!-- Start Of Profile Section -->
+            <section class="profileSection">
+                <section class="partnerProfileData">
+                    <section class="partnerPersonalData">
+                        <img class="partnerPersonalData__partnerAvatar partnerPersonalData__partnerAvatar--notLoggedIn"
+                            src="./assets/Image/emptyProfile.svg" alt="partnerAvatarNotSignUp" />
+                        <img class="partnerPersonalData__partnerAvatar partnerPersonalData__partnerAvatar--LoggedIn"
+                            src="./assets/Image/userAvatar.svg" alt="partnerAvatarSignUp" />
+                        <section class="partnerPersonalDataWrapper">
+                            <span class="partnerPersonalData__partnerName">سارا کمالی</span>
+                            <span class="partnerPersonalData__partnerTelNumber">۰۹۲۱۶۴۲۲۹۵۳</span>
+                        </section>
+                    </section>
+                </section>
+                <!--- End Of Profile Section --->
+
+
+                <!--- Start Of Inner Border --->
+                <hr class="innerBorder" />
+                <!---- End Of Inner Border ---->
+
+
+                <!-- Start Of PartnerShip Status -->
+                <section class="partnerStatusProject">
+
+                    <section class="partnerStatusProject__headerStatus">
+                        <i
+                            class="partnerStatusProject__dispalyIconStatus partnerStatusProject__dispalyIconStatus--active"></i>
+                        <span class="partnerStatusProject__titleStatus">پروژه‌ی فعال شما</span>
+                    </section>
+
+
+
+
+                    <section class="partnerStatusProject__activeStatus">
+
+
+                        <section class="currentProject">
+
+                            <section class="currentProject__projectOrganData">
+                                <img src="./assets/Image/organLogo.svg" class="currentProject__oraganLogoImage"
+                                    alt="organLogoImg" />
+                                <section class="currentProject__dataTexts">
+                                    <span class="currentProject__activeProjectName">تهیه مخزن آب برای حیات وحش
+                                        گناباد</span>
+                                    <span class="currentProject__activeOraganName">انجمن نذر طبیعت</span>
+                                </section>
+                            </section>
+
+
+                            <section class="currentProject__projectOptions">
+                                <p class="currentProject__costTextProject">ماهیانه
+                                    <span class="currentProject__dynamicNumberProjectNumber">
+                                        ۲۰۰.۰۰۰
+                                    </span>
+                                    تومان
+                                </p>
+
+                                
+                                <section class="currentProject__changeBtns">
+                                    <a href="#" class="currentProject__editBtn">ویرایش</a>
+                                    <a href="#" class="currentProject__cancelBtn">لغو</a>
+                                </section>
+
+                            </section>
+
+
+
+                        </section>
+
+
+
+                        <section class="partnerStatus__dataLogProject">
+
+                        </section>
+                    </section>
+
+
+                    <section class="partnerStatusProject__expiredStatus"></section>
+                    <section class="partnerStatusProject__needChooseStatus"></section>
+                </section>
+                <!--- End Of PartnerShip Status --->
+
+            </section>
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--------------------------- Start Of Sliders Wrapper --------------------------->
+
+        <!-- 
+                  <section class="partnershipBlock__projectsSliderWrapper">
+
+            <div class="nextSlideIcon">
+              <i class="fi fi-bs-angle-small-left"></i>
+            </div>
+
+            <div class="perviousSlideIcon">
+              <i class="fi fi-bs-angle-small-right"></i>
+            </div>
+
+
+            <section class="projectsSliderItem">
+              <section class="projectsSliderItem__Header">
+                <div class="projectsSliderItem__OrganizationData">
+                  <img src="./assets/Image/logo.jpg" class="projectsSliderItem__OrganizationLogo"
+                    alt="organizationLogo">
+                  <p class="projectsSliderItem__OrganizationName">موسسه صبح روشن</p>
+                </div>
+                <img src="./assets/Image/anna-kolosyuk-4R6pg0Iq5IU-unsplash 1projectImage.png"
+                  class="projectsSliderItem__OrganizationBanner" alt="projectBanner">
+              </section>
+              <article class="projectsSliderItem__Data">
+                <h3 class="projectsSliderItem__Title">تهیه ابزار توانبخشی برای کودکان دارای اتیسم</h3>
+                <p class="projectsSliderItem__Description">
+                  استان پهناور خراسان رضوی با داشتن ده­ها منطقه حفاظت شده، پارک ملی و پناهگاه حیات وحش دارای تنوع بی
+                  نظیری از گونه های مختلف حیات وحش است؛ اما متاسفانه محیط زیست این استان به دلیل خشکسالی­های پی در پی
+                  آسیب زیادی دیده است.
+                  پیش از این موسسه نذر طبیعت با کمک­های مردمی چندین آبشخور و مخزن آب به منطقه حفاظت شده اهدا کرده است.
+                  امسال نیز با پیگیری های صورت گرفته متوجه شدیم مشکلات متعددی در راه حفاظت از حیات وحش این منطقه وجود
+                  دارد و محیط بانان در این منطقه ی با ارزش به وسیله تانکر، آبرسانی می­ کنند. کمبود مخزن ذخیره آب و یا
+                  فرسوده بودن برخی از آنها، مشکلاتی را به وجود آورده است. به همین دلیل در گام اول می­خواهیم با همراهی
+                  شما 5 مخزن آب 5 هزار لیتری به منطقه حفاظت شده هنگام گناباد اهدا کنیم.
+                </p>
+              </article>
+
+              <section class="projectsSliderItem__BtnWrapper">
+                <button class="projectsSliderItem__BtnMoreLearn">بیشتر بدانید</button>
+              </section>
+
+            </section>
+            <section class="projectsSliderItem">
+              <section class="projectsSliderItem__Header">
+                <div class="projectsSliderItem__OrganizationData">
+                  <img src="./assets/Image/logo.jpg" class="projectsSliderItem__OrganizationLogo"
+                    alt="organizationLogo">
+                  <p class="projectsSliderItem__OrganizationName">موسسه صبح روشن</p>
+                </div>
+                <img src="./assets/Image/anna-kolosyuk-4R6pg0Iq5IU-unsplash 1projectImage.png"
+                  class="projectsSliderItem__OrganizationBanner" alt="projectBanner">
+              </section>
+              <article class="projectsSliderItem__Data">
+                <h3 class="projectsSliderItem__Title">تهیه ابزار توانبخشی برای کودکان دارای اتیسم</h3>
+                <p class="projectsSliderItem__Description">
+                  استان پهناور خراسان رضوی با داشتن ده­ها منطقه حفاظت شده، پارک ملی و پناهگاه حیات وحش دارای تنوع بی
+                  نظیری از گونه های مختلف حیات وحش است؛ اما متاسفانه محیط زیست این استان به دلیل خشکسالی­های پی در پی
+                  آسیب زیادی دیده است.
+                  پیش از این موسسه نذر طبیعت با کمک­های مردمی چندین آبشخور و مخزن آب به منطقه حفاظت شده اهدا کرده است.
+                  امسال نیز با پیگیری های صورت گرفته متوجه شدیم مشکلات متعددی در راه حفاظت از حیات وحش این منطقه وجود
+                  دارد و محیط بانان در این منطقه ی با ارزش به وسیله تانکر، آبرسانی می­ کنند. کمبود مخزن ذخیره آب و یا
+                  فرسوده بودن برخی از آنها، مشکلاتی را به وجود آورده است. به همین دلیل در گام اول می­خواهیم با همراهی
+                  شما 5 مخزن آب 5 هزار لیتری به منطقه حفاظت شده هنگام گناباد اهدا کنیم.
+                </p>
+              </article>
+
+              <section class="projectsSliderItem__BtnWrapper">
+                <button class="projectsSliderItem__BtnMoreLearn">بیشتر بدانید</button>
+              </section>
+
+            </section>
+            <section class="projectsSliderItem">
+              <section class="projectsSliderItem__Header">
+                <div class="projectsSliderItem__OrganizationData">
+                  <img src="./assets/Image/logo.jpg" class="projectsSliderItem__OrganizationLogo"
+                    alt="organizationLogo">
+                  <p class="projectsSliderItem__OrganizationName">موسسه صبح روشن</p>
+                </div>
+                <img src="./assets/Image/anna-kolosyuk-4R6pg0Iq5IU-unsplash 1projectImage.png"
+                  class="projectsSliderItem__OrganizationBanner" alt="projectBanner">
+              </section>
+              <article class="projectsSliderItem__Data">
+                <h3 class="projectsSliderItem__Title">تهیه ابزار توانبخشی برای کودکان دارای اتیسم</h3>
+                <p class="projectsSliderItem__Description">
+                  استان پهناور خراسان رضوی با داشتن ده­ها منطقه حفاظت شده، پارک ملی و پناهگاه حیات وحش دارای تنوع بی
+                  نظیری از گونه های مختلف حیات وحش است؛ اما متاسفانه محیط زیست این استان به دلیل خشکسالی­های پی در پی
+                  آسیب زیادی دیده است.
+                  پیش از این موسسه نذر طبیعت با کمک­های مردمی چندین آبشخور و مخزن آب به منطقه حفاظت شده اهدا کرده است.
+                  امسال نیز با پیگیری های صورت گرفته متوجه شدیم مشکلات متعددی در راه حفاظت از حیات وحش این منطقه وجود
+                  دارد و محیط بانان در این منطقه ی با ارزش به وسیله تانکر، آبرسانی می­ کنند. کمبود مخزن ذخیره آب و یا
+                  فرسوده بودن برخی از آنها، مشکلاتی را به وجود آورده است. به همین دلیل در گام اول می­خواهیم با همراهی
+                  شما 5 مخزن آب 5 هزار لیتری به منطقه حفاظت شده هنگام گناباد اهدا کنیم.
+                </p>
+              </article>
+
+              <section class="projectsSliderItem__BtnWrapper">
+                <button class="projectsSliderItem__BtnMoreLearn">بیشتر بدانید</button>
+              </section>
+
+            </section>
+            <section class="projectsSliderItem">
+              <section class="projectsSliderItem__Header">
+                <div class="projectsSliderItem__OrganizationData">
+                  <img src="./assets/Image/logo.jpg" class="projectsSliderItem__OrganizationLogo"
+                    alt="organizationLogo">
+                  <p class="projectsSliderItem__OrganizationName">موسسه صبح روشن</p>
+                </div>
+                <img src="./assets/Image/anna-kolosyuk-4R6pg0Iq5IU-unsplash 1projectImage.png"
+                  class="projectsSliderItem__OrganizationBanner" alt="projectBanner">
+              </section>
+              <article class="projectsSliderItem__Data">
+                <h3 class="projectsSliderItem__Title">تهیه ابزار توانبخشی برای کودکان دارای اتیسم</h3>
+                <p class="projectsSliderItem__Description">
+                  استان پهناور خراسان رضوی با داشتن ده­ها منطقه حفاظت شده، پارک ملی و پناهگاه حیات وحش دارای تنوع بی
+                  نظیری از گونه های مختلف حیات وحش است؛ اما متاسفانه محیط زیست این استان به دلیل خشکسالی­های پی در پی
+                  آسیب زیادی دیده است.
+                  پیش از این موسسه نذر طبیعت با کمک­های مردمی چندین آبشخور و مخزن آب به منطقه حفاظت شده اهدا کرده است.
+                  امسال نیز با پیگیری های صورت گرفته متوجه شدیم مشکلات متعددی در راه حفاظت از حیات وحش این منطقه وجود
+                  دارد و محیط بانان در این منطقه ی با ارزش به وسیله تانکر، آبرسانی می­ کنند. کمبود مخزن ذخیره آب و یا
+                  فرسوده بودن برخی از آنها، مشکلاتی را به وجود آورده است. به همین دلیل در گام اول می­خواهیم با همراهی
+                  شما 5 مخزن آب 5 هزار لیتری به منطقه حفاظت شده هنگام گناباد اهدا کنیم.
+                </p>
+              </article>
+
+              <section class="projectsSliderItem__BtnWrapper">
+                <button class="projectsSliderItem__BtnMoreLearn">بیشتر بدانید</button>
+              </section>
+
+            </section>
+            <section class="projectsSliderItem">
+              <section class="projectsSliderItem__Header">
+                <div class="projectsSliderItem__OrganizationData">
+                  <img src="./assets/Image/logo.jpg" class="projectsSliderItem__OrganizationLogo"
+                    alt="organizationLogo">
+                  <p class="projectsSliderItem__OrganizationName">موسسه صبح روشن</p>
+                </div>
+                <img src="./assets/Image/anna-kolosyuk-4R6pg0Iq5IU-unsplash 1projectImage.png"
+                  class="projectsSliderItem__OrganizationBanner" alt="projectBanner">
+              </section>
+              <article class="projectsSliderItem__Data">
+                <h3 class="projectsSliderItem__Title">تهیه ابزار توانبخشی برای کودکان دارای اتیسم</h3>
+                <p class="projectsSliderItem__Description">
+                  استان پهناور خراسان رضوی با داشتن ده­ها منطقه حفاظت شده، پارک ملی و پناهگاه حیات وحش دارای تنوع بی
+                  نظیری از گونه های مختلف حیات وحش است؛ اما متاسفانه محیط زیست این استان به دلیل خشکسالی­های پی در پی
+                  آسیب زیادی دیده است.
+                  پیش از این موسسه نذر طبیعت با کمک­های مردمی چندین آبشخور و مخزن آب به منطقه حفاظت شده اهدا کرده است.
+                  امسال نیز با پیگیری های صورت گرفته متوجه شدیم مشکلات متعددی در راه حفاظت از حیات وحش این منطقه وجود
+                  دارد و محیط بانان در این منطقه ی با ارزش به وسیله تانکر، آبرسانی می­ کنند. کمبود مخزن ذخیره آب و یا
+                  فرسوده بودن برخی از آنها، مشکلاتی را به وجود آورده است. به همین دلیل در گام اول می­خواهیم با همراهی
+                  شما 5 مخزن آب 5 هزار لیتری به منطقه حفاظت شده هنگام گناباد اهدا کنیم.
+                </p>
+              </article>
+
+              <section class="projectsSliderItem__BtnWrapper">
+                <button class="projectsSliderItem__BtnMoreLearn">بیشتر بدانید</button>
+              </section>
+            </section>
+          </section>
+     -->
+
+        <!---------------------------- End Of Sliders Wrapper ---------------------------->
+
+
+
+
+
+
+
 
 
 
@@ -33,4 +309,5 @@
 
     </div>
 </body>
+
 </html>
