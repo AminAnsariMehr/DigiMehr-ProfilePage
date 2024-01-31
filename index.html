@@ -2,121 +2,134 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
-    <link rel="stylesheet" href="./assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-    <div class="container">
+  <div class="container">
 
-        <!--------------------------- Start Of NavBar --------------------------->
-        <nav class="navBar">
-            <div class=" digiMehrLogoTitleWrapper">
-                <div class="digiMehrLogoWrapper__wrapperLogo">
-                    <img class="digiMehrLogoWrapper__insideLogo" src="./assets/Image/Fillinside digimehr logo i.svg"
-                        alt="digiLogo">
-                </div>
-                <img class="digiMehrLogoWrapper__titleName" src="./assets/Image/Digikala Mehr Brandingasa.svg"
-                    alt="digiTitleName" />
-            </div>
+    <!--------------------------- Start Of NavBar --------------------------->
+    <nav class="navBar">
+      <div class=" digiMehrLogoTitleWrapper">
+        <div class="digiMehrLogoWrapper__wrapperLogo">
+          <img class="digiMehrLogoWrapper__insideLogo" src="./assets/Image/Fillinside digimehr logo i.svg"
+            alt="digiLogo">
+        </div>
+        <img class="digiMehrLogoWrapper__titleName" src="./assets/Image/Digikala Mehr Brandingasa.svg"
+          alt="digiTitleName" />
+      </div>
 
-            <button class="signInProfileBtn">
-                <i class="fi fi-bs-enter signInProfileBtn__signInIcon"></i>
-                <span class="signInProfileBtn__text">پروفایل I ثبت نام</span>
-            </button>
-        </nav>
-        <!---------------------------- End Of NavBar ---------------------------->
+      <button class="signInProfileBtn">
+        <i class="fi fi-bs-enter signInProfileBtn__signInIcon"></i>
+        <span class="signInProfileBtn__text">پروفایل I ثبت نام</span>
+      </button>
+    </nav>
+    <!---------------------------- End Of NavBar ---------------------------->
 
-        <main class="main">
+    <main class="main">
 
-            <!-- Start Of Profile Section -->
-            <section class="profileSection">
-                <section class="partnerProfileData">
-                    <section class="partnerPersonalData">
-                        <img class="partnerPersonalData__partnerAvatar partnerPersonalData__partnerAvatar--notLoggedIn"
-                            src="./assets/Image/emptyProfile.svg" alt="partnerAvatarNotSignUp" />
-                        <img class="partnerPersonalData__partnerAvatar partnerPersonalData__partnerAvatar--LoggedIn"
-                            src="./assets/Image/userAvatar.svg" alt="partnerAvatarSignUp" />
-                        <section class="partnerPersonalDataWrapper">
-                            <span class="partnerPersonalData__partnerName">سارا کمالی</span>
-                            <span class="partnerPersonalData__partnerTelNumber">۰۹۲۱۶۴۲۲۹۵۳</span>
-                        </section>
-                    </section>
+      <!-- Start Of Profile Section -->
+      <section class="profileSection">
+        <section class="partnerProfileData">
+          <section class="partnerPersonalData">
+            <img class="partnerPersonalData__partnerAvatar partnerPersonalData__partnerAvatar--notLoggedIn"
+              src="./assets/Image/emptyProfile.svg" alt="partnerAvatarNotSignUp" />
+            <img class="partnerPersonalData__partnerAvatar partnerPersonalData__partnerAvatar--LoggedIn"
+              src="./assets/Image/userAvatar.svg" alt="partnerAvatarSignUp" />
+            <section class="partnerPersonalDataWrapper">
+              <span class="partnerPersonalData__partnerName">سارا کمالی</span>
+              <span class="partnerPersonalData__partnerTelNumber">۰۹۲۱۶۴۲۲۹۵۳</span>
+            </section>
+          </section>
+        </section>
+        <!--- End Of Profile Section --->
+
+
+        <!--- Start Of Inner Border --->
+        <hr class="innerBorder" />
+        <!---- End Of Inner Border ---->
+
+
+        <!-- Start Of PartnerShip Status -->
+        <section class="partnerStatusProject">
+
+          <section class="partnerStatusProject__headerStatus">
+            <i class="partnerStatusProject__dispalyIconStatus partnerStatusProject__dispalyIconStatus--active"></i>
+            <span class="partnerStatusProject__titleStatus">پروژه‌ی فعال شما</span>
+          </section>
+
+
+
+
+          <section class="partnerStatusProject__activeStatus">
+
+
+            <section class="currentProject">
+
+              <section class="currentProject__projectOrganData">
+                <img src="./assets/Image/organLogo.svg" class="currentProject__oraganLogoImage" alt="organLogoImg" />
+                <section class="currentProject__dataTexts">
+                  <span class="currentProject__activeProjectName">تهیه مخزن آب برای حیات وحش
+                    گناباد</span>
+                  <span class="currentProject__activeOraganName">انجمن نذر طبیعت</span>
                 </section>
-                <!--- End Of Profile Section --->
+              </section>
 
 
-                <!--- Start Of Inner Border --->
-                <hr class="innerBorder" />
-                <!---- End Of Inner Border ---->
+              <section class="currentProject__projectOptions">
+                <p class="currentProject__costTextProject">ماهیانه
+                  <span class="currentProject__dynamicNumberProjectNumber">
+                    ۲۰۰.۰۰۰
+                  </span>
+                  تومان
+                </p>
 
 
-                <!-- Start Of PartnerShip Status -->
-                <section class="partnerStatusProject">
-
-                    <section class="partnerStatusProject__headerStatus">
-                        <i
-                            class="partnerStatusProject__dispalyIconStatus partnerStatusProject__dispalyIconStatus--active"></i>
-                        <span class="partnerStatusProject__titleStatus">پروژه‌ی فعال شما</span>
-                    </section>
-
-
-
-
-                    <section class="partnerStatusProject__activeStatus">
-
-
-                        <section class="currentProject">
-
-                            <section class="currentProject__projectOrganData">
-                                <img src="./assets/Image/organLogo.svg" class="currentProject__oraganLogoImage"
-                                    alt="organLogoImg" />
-                                <section class="currentProject__dataTexts">
-                                    <span class="currentProject__activeProjectName">تهیه مخزن آب برای حیات وحش
-                                        گناباد</span>
-                                    <span class="currentProject__activeOraganName">انجمن نذر طبیعت</span>
-                                </section>
-                            </section>
-
-
-                            <section class="currentProject__projectOptions">
-                                <p class="currentProject__costTextProject">ماهیانه
-                                    <span class="currentProject__dynamicNumberProjectNumber">
-                                        ۲۰۰.۰۰۰
-                                    </span>
-                                    تومان
-                                </p>
-
-                                
-                                <section class="currentProject__changeBtns">
-                                    <a href="#" class="currentProject__editBtn">ویرایش</a>
-                                    <a href="#" class="currentProject__cancelBtn">لغو</a>
-                                </section>
-
-                            </section>
-
-
-
-                        </section>
-
-
-
-                        <section class="partnerStatus__dataLogProject">
-
-                        </section>
-                    </section>
-
-
-                    <section class="partnerStatusProject__expiredStatus"></section>
-                    <section class="partnerStatusProject__needChooseStatus"></section>
+                <section class="currentProject__changeBtns">
+                  <a href="#" class="currentProject__editBtn">ویرایش</a>
+                  <a href="#" class="currentProject__cancelBtn">لغو</a>
                 </section>
-                <!--- End Of PartnerShip Status --->
+
+              </section>
+
+
 
             </section>
-        </main>
+
+
+
+            <section class="partnerStatus__dataLogProject">
+
+              <section class="partnerStatus__dataLogMonths">
+                <span class="partnerStatus__dataLogMonthsNumber">۱۷</span>
+                <span class="partnerStatus__dataLogMonthsText">تعداد ماه‌هایی که فعال بودید</span>
+
+              </section>
+
+              <section class="partnerStatus__dataLogCost">
+                <div class="partnerStatus__dataLogCostNumberWrapper">
+                  <span class="partnerStatus__dataLogCostDynamicNumber">۲۳.۰۰۰.۰۰۰</span>
+                  <span class="partnerStatus__dataLogCostRialWord">ریال</span>
+                </div>
+                <span class="partnerStatus__dataLogCostText">مبلغی که تاکنون شریک شدید</span>
+              </section>
+
+
+            </section>
+          </section>
+
+
+          <section class="partnerStatusProject__expiredStatus"></section>
+          <section class="partnerStatusProject__needChooseStatus"></section>
+        </section>
+        <!--- End Of PartnerShip Status --->
+
+      </section>
+    </main>
 
 
 
@@ -133,9 +146,9 @@
 
 
 
-        <!--------------------------- Start Of Sliders Wrapper --------------------------->
+    <!--------------------------- Start Of Sliders Wrapper --------------------------->
 
-        <!-- 
+    <!-- 
                   <section class="partnershipBlock__projectsSliderWrapper">
 
             <div class="nextSlideIcon">
@@ -294,7 +307,7 @@
           </section>
      -->
 
-        <!---------------------------- End Of Sliders Wrapper ---------------------------->
+    <!---------------------------- End Of Sliders Wrapper ---------------------------->
 
 
 
@@ -307,7 +320,7 @@
 
 
 
-    </div>
+  </div>
 </body>
 
 </html>

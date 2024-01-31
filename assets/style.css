@@ -118,8 +118,6 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     gap: var(--space-20);
-
-    background: purple;
 }
 
 /* --- Start Of Inner Border --- */
@@ -137,8 +135,6 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-    background: yellow;
 }
 
 .partnerPersonalData {
@@ -146,9 +142,6 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: var(--space-12);
-
-    background-color: deeppink;
-    /* padding: 0 10px; */
 }
 
 .partnerPersonalData__partnerAvatar {
@@ -167,8 +160,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: var(--space-8);
-
-    /* background: aqua; */
 }
 
 .partnerPersonalData__partnerName {
@@ -187,9 +178,6 @@ body {
 
 /*-------------------------------------------- End Of Profile Section --------------------------------------------*/
 
-
-
-/*------------------------------------------- Start Of Actived Project -------------------------------------------*/
 .partnerStatusProject {
     width: 100%;
     display: flex;
@@ -197,7 +185,6 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     gap: var(--space-12);
-
 }
 
 .partnerStatusProject__headerStatus {
@@ -205,14 +192,11 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: var(--space-8);
-
-    background-color: deeppink;
 }
 
 .partnerStatusProject__activeStatus {
     width: 100%;
     height: 88px;
-    background: aqua;
 }
 
 .partnerStatusProject__dispalyIconStatus {
@@ -233,36 +217,34 @@ body {
     font-weight: 400;
 }
 
-.partnerStatusProject__activeStatus,
-.partnerStatusProject__expiredStatus,
-.partnerStatusProject__needChooseStatus{
+
+/*------------------------------------------- Start Of Actived Project -------------------------------------------*/
+
+.partnerStatusProject__activeStatus {
     width: 100%;
     height: 88px;
+    border-radius: var(--space-8);
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-}
-
-.partnerStatusProject__activeStatus{
     gap: var(--space-24);
 }
 
 .currentProject,
-.partnerStatus__dataLogProject{
+.partnerStatus__dataLogProject {
     width: calc((100% - var(--space-24)) / 2);
+    height: 100%;
     padding: var(--space-16);
     background: var(--color-white);
-    border: 1px solid var(--color-border) ;
+    border: 1px solid var(--color-border);
     border-radius: var(--space-8);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
-    height: 100%;
+    gap: var(--space-10);
 }
 
-.currentProject__projectOrganData{
+.currentProject__projectOrganData {
     width: 432px;
     display: flex;
     justify-content: flex-start;
@@ -272,14 +254,14 @@ body {
     height: 100%;
 }
 
-.currentProject__oraganLogoImage{
+.currentProject__oraganLogoImage {
     width: 48px;
     height: 48px;
     border-radius: var(--space-10);
 }
 
 
-.currentProject__dataTexts{
+.currentProject__dataTexts {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -287,30 +269,30 @@ body {
     align-items: flex-start;
 }
 
-.currentProject__activeProjectName{
+.currentProject__activeProjectName {
     width: 372px;
-color:var(--color-N700) ;
-font-size: var(--font-size-normal) ;
-font-weight: 400;
-line-height: var(--space-24);
+    color: var(--color-N700);
+    font-size: var(--font-size-normal);
+    font-weight: 400;
+    line-height: var(--space-24);
 }
 
-.currentProject__activeOraganName{
+.currentProject__activeOraganName {
     color: var(--color-textLight);
     font-size: var(--font-size-tiny);
-    font-weight:400;
-    line-height:var(--space-20) ;
+    font-weight: 400;
+    line-height: var(--space-20);
 }
 
-.currentProject__projectOptions{
-    height:60px ;
+.currentProject__projectOptions {
+    height: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.currentProject__costTextProject{
+.currentProject__costTextProject {
     font-size: var(--font-size-xxtiny);
     color: var(--color-textLight);
     font-weight: 400;
@@ -321,14 +303,14 @@ line-height: var(--space-24);
     gap: 2px;
 }
 
-.currentProject__dynamicNumberProjectNumber{
+.currentProject__dynamicNumberProjectNumber {
     color: var(--color-textDark);
     font-size: var(--font-size-tiny);
     font-weight: 400;
     line-height: var(--space-20);
 }
 
-.currentProject__changeBtns{
+.currentProject__changeBtns {
     padding: var(--space-12) var(--space-16);
     display: flex;
     justify-content: center;
@@ -338,7 +320,7 @@ line-height: var(--space-24);
 
 
 .currentProject__editBtn,
-.currentProject__cancelBtn{
+.currentProject__cancelBtn {
     color: var(--color-primary);
     font-size: var(--font-size-tiny);
     line-height: var(--space-12);
@@ -346,11 +328,11 @@ line-height: var(--space-24);
     text-decoration: none;
 }
 
-.currentProject__cancelBtn{
+.currentProject__cancelBtn {
     position: relative;
 }
 
-.currentProject__cancelBtn::before{
+.currentProject__cancelBtn::before {
     content: ' ';
     width: 1px;
     height: 100%;
@@ -361,5 +343,82 @@ line-height: var(--space-24);
 }
 
 
+.partnerStatus__dataLogMonths,
+.partnerStatus__dataLogCost {
+    width: 266px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-12);
+}
+
+.partnerStatus__dataLogMonthsNumber,
+.partnerStatus__dataLogCostNumberWrapper {
+    width: 100%;
+    font-size:var(--font-size-medium) ;
+    line-height: var(--space-24);
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.partnerStatus__dataLogMonthsText,
+.partnerStatus__dataLogCostText {
+    color: var(--color-textLight);
+    line-height: var(--space-20);
+    font-size: var(--font-size-small);
+    font-weight: 400;
+}
+
+.partnerStatus__dataLogCostRialWord {
+    font-weight: 400;
+}
 
 /*-------------------------------------------- End Of Actived Project --------------------------------------------*/
+
+
+
+
+/*------------------------------------------- Start Of Expired Project -------------------------------------------*/
+.partnerStatusProject__expiredStatus{
+    width: 100%;
+    height: 88px;
+    border: 1px solid var(--color-red);
+    border-radius:var(--space-8) ;
+    background: var(--color-white);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+
+/*-------------------------------------------- End Of Expired Project --------------------------------------------*/
+
+
+
+/*------------------------------------------- Start Of Not Choose Project -------------------------------------------*/
+.partnerStatusProject__needChooseStatus{
+    width: 100%;
+    height: 88px;
+    border: 1px solid var(--color-border);
+    border-radius:var(--space-8) ;
+    background: var(--color-white);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+/*-------------------------------------------- End Of Not Choose Project --------------------------------------------*/
+
+
+.partnerStatusProject__activeStatus,
+.partnerStatusProject__expiredStatus,
+.partnerStatusProject__needChooseStatus {
+background-color: orange;
+}
