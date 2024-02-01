@@ -179,7 +179,7 @@ body {
 }
 
 
-.partnerPersonalData__editBtn{
+.partnerPersonalData__editBtn {
     color: var(--color-primary);
     font-size: var(--font-size-tiny);
     line-height: var(--space-16);
@@ -399,7 +399,7 @@ body {
     border-radius: var(--space-8);
 }
 
-.currentProject--successful{
+.currentProject--successful {
     width: 100%;
     height: 100%;
     padding: var(--space-16);
@@ -561,6 +561,7 @@ body {
     line-height: var(--space-16);
     border-radius: var(--space-8);
     font-weight: 400;
+    user-select: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -600,4 +601,166 @@ body {
     line-height: var(--space-24);
     font-weight: 400;
 }
+
 /*-------------------------------------------- End Of Need Choose Project --------------------------------------------*/
+
+
+
+/*-------------------- Start Of Box Sara --------------------*/
+
+/*--------------------- End Of Box Sara ---------------------*/
+
+
+
+
+/*-------------------- Start Of Payment History --------------------*/
+.historyOfPayments {
+    width: 100%;
+    height: 512px;
+    padding: var(--space-20);
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--space-12);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--space-20);
+}
+
+.historyOfPayments__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.historyOfPayments__headerTitle {
+    color: var(--color-darkBlue);
+    font-size: var(--font-size-normal);
+    line-height: var(--space-24);
+    font-weight: 400;
+}
+
+.historyOfPayments__headerDateSort {
+    color: var(--color-textLight);
+    font-size: var(--font-size-tiny);
+    line-height: var(--space-24);
+    font-weight: 400;
+}
+
+.paymentsList {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    height: 368px;
+    background-color: crimson;
+}
+
+.paymentsList__headerTitles {
+    width: 100%;
+    height: 32px;
+
+    background-color: yellow;
+
+}
+
+
+
+
+
+.historyOfPayments__allPaymentsBtn {
+    width: 152px;
+    height: 40px;
+    color: var(--color-primary);
+    background: transparent;
+    font-size: var(--font-size-tiny);
+    line-height: var(--space-16);
+    font-weight: 700;
+}
+
+
+.allPaymentsSlidePagination {
+    width: 100%;
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.allPaymentsSlidePagination__perviousBtn,
+.allPaymentsSlidePagination__nextBtn {
+    width: 85px;
+    height: 36px;
+    color: var(--color-primary);
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-8);
+}
+
+.allPaymentsSlidePagination__perviousBtn i,
+.allPaymentsSlidePagination__nextBtn i{
+    width:20px ;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.allPaymentsSlidePagination__pagesNumbers {
+    max-width: 380px;
+    height: 36px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.allPaymentsSlidePagination__pagesNumbersItem {
+    width: 36px;
+    height: 36px;
+    color: var(--color-N700);
+    font-size: var(--font-size-tiny);
+    line-height: calc(var(--space-16) + var(--space-10));
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allPaymentsSlidePagination__pagesNumbersItem--selected{
+   color: var(--color-white);
+    background:var(--color-primary) ;
+    border: 1px solid var(--color-primary);
+}
+
+.allPaymentsSlidePagination__pagesNumbersItem:hover{
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.allPaymentsSlidePagination__morePageItem{
+    width: 20px;
+    height: 26px;
+    color: var(--color-N700);
+    font-size: var(--font-size-tiny);
+    font-weight: 600;
+    line-height: calc(var(--space-16) + var(--space-10));
+    user-select: none;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------- End Of Payment History ---------------------*/
