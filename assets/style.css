@@ -616,7 +616,7 @@ body {
 /*-------------------- Start Of Payment History --------------------*/
 .historyOfPayments {
     width: 100%;
-    height: 512px;
+    /* height: 512px; */
     padding: var(--space-20);
     background: var(--color-white);
     border: 1px solid var(--color-border);
@@ -649,26 +649,143 @@ body {
     font-weight: 400;
 }
 
-.paymentsList {
+.paymentsListWrapper {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-
-    height: 368px;
-    background-color: crimson;
 }
 
-.paymentsList__headerTitles {
+
+/*--- Start Of Payments List Header ---*/
+.paymentsHeader {
     width: 100%;
     height: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
-    background-color: yellow;
+.paymentsHeader__dateTitle,
+.paymentsHeader__statusTitle,
+.paymentsHeader__projectTitle,
+.paymentsHeader__costTitle {
+    height: 100%;
+    padding: 6px var(--space-16);
+    color: var(--color-textMid);
+    font-size: var(--font-size-tiny);
+    line-height: var(--space-20);
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.paymentsHeader__dateTitle,
+.paymentsHeader__statusTitle {
+    width: 132px;
+}
+
+.paymentsHeader__projectTitle {
+    width: 784px;
+}
+
+.paymentsHeader__costTitle {
+    width: 100px;
+}
+
+/*---- End Of Payments List Header ----*/
+
+
+.paymentsList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 10px;
+    /* height: 336px; */
+    /* background-color: red; */
 }
 
 
 
+
+/*--- Start Of Item Complex Properties ---*/
+.paymentsList__projectItem {
+    width: 100%;
+    height: 56px;
+    border-bottom: 1px solid var(--color-border);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.paymentsList__itemDate,
+.paymentsList__itemStatus,
+.paymentsList__itemProjectName,
+.paymentsList__itemCost {
+    height: 100%;
+    padding: 6px var(--space-16);
+    color: var(--color-textMid);
+    font-size: var(--font-size-tiny);
+    line-height: var(--space-20);
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.paymentsList__itemDate,
+.paymentsList__itemStatus {
+    width: 132px;
+}
+
+.paymentsList__itemStatus--nextPayment {
+    color: var(--color-purpleDark);
+}
+
+.paymentsList__itemStatus--successful {
+    color: var(--color-primary);
+    gap: var(--space-4);
+}
+
+.paymentsList__itemStatus--checkIcon{
+    width: 10.75px;
+    height: 10.75px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paymentsList__itemProjectName {
+    width: 784px;
+}
+
+.paymentsList__itemCost {
+    width: 100px;
+    gap: 2px;
+}
+
+.paymentsList__itemCost--dynamicNumberCost {
+    color: var(--color-textDark);
+}
+
+.paymentsList__itemCost--staticTomanText {
+    color: var(--color-textLight);
+    font-size: var(--font-size-xxtiny);
+    line-height: var(--space-12);
+}
+
+
+
+/*--- Start Of Item Complex Properties ---*/
 
 
 .historyOfPayments__allPaymentsBtn {
@@ -679,15 +796,198 @@ body {
     font-size: var(--font-size-tiny);
     line-height: var(--space-16);
     font-weight: 700;
+    cursor: pointer;
 }
 
+/*--------------------- End Of Payment History ---------------------*/
 
-.allPaymentsSlidePagination {
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+/*-------------------- Start Of  AllPayment History Year --------------------*/
+
+.historyOfAllPayments {
     width: 100%;
-    height: 57px;
+    /* height: 512px; */
+    padding: var(--space-20);
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--space-12);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--space-20);
+}
+
+.historyOfAllPayments__header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.historyOfAllPayments__headerTitle {
+    color: var(--color-darkBlue);
+    font-size: var(--font-size-normal);
+    line-height: var(--space-24);
+    font-weight: 400;
+}
+
+.historyOfAllPayments__headerDateSort {
+    color: var(--color-textLight);
+    font-size: var(--font-size-tiny);
+    line-height: var(--space-24);
+    font-weight: 400;
+}
+
+.allPaymentsListWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+
+/*--- Start Of allPayments List Header ---*/
+.allPaymentsHeader {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.allPaymentsHeader__dateTitle,
+.allPaymentsHeader__statusTitle,
+.allPaymentsHeader__projectTitle,
+.allPaymentsHeader__costTitle {
+    height: 100%;
+    padding: 6px var(--space-16);
+    color: var(--color-textMid);
+    font-size: var(--font-size-tiny);
+    line-height: var(--space-20);
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.allPaymentsHeader__dateTitle,
+.allPaymentsHeader__statusTitle {
+    width: 132px;
+}
+
+.allPaymentsHeader__projectTitle {
+    width: 784px;
+}
+
+.allPaymentsHeader__costTitle {
+    width: 100px;
+}
+
+/*---- End Of allPayments List Header ----*/
+
+
+.allPaymentsList {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 10px;
+    /* height: 336px; */
+    /* background-color: red; */
+}
+
+
+
+
+/*--- Start Of Item Complex Properties ---*/
+.allPaymentsList__projectItem {
+    width: 100%;
+    height: 56px;
+    border-bottom: 1px solid var(--color-border);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.allPaymentsList__itemDate,
+.allPaymentsList__itemStatus,
+.allPaymentsList__itemProjectName,
+.allPaymentsList__itemCost {
+    height: 100%;
+    padding: 6px var(--space-16);
+    color: var(--color-textMid);
+    font-size: var(--font-size-tiny);
+    line-height: var(--space-20);
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.allPaymentsList__itemDate,
+.allPaymentsList__itemStatus {
+    width: 132px;
+}
+
+.allPaymentsList__itemStatus--nextPayment {
+    color: var(--color-purpleDark);
+}
+
+.allPaymentsList__itemStatus--successful {
+    color: var(--color-primary);
+    gap: var(--space-4);
+}
+
+.allPaymentsList__itemStatus--checkIcon{
+    width: 10.75px;
+    height: 10.75px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allPaymentsList__itemProjectName {
+    width: 784px;
+}
+
+.allPaymentsList__itemCost {
+    width: 100px;
+    gap: 2px;
+}
+
+.allPaymentsList__itemCost--dynamicNumberCost {
+    color: var(--color-textDark);
+}
+
+.allPaymentsList__itemCost--staticTomanText {
+    color: var(--color-textLight);
+    font-size: var(--font-size-xxtiny);
+    line-height: var(--space-12);
+}
+
+
+
+/*--- End Of Item Complex Properties ---*/
+
+
+/* ---------- Start Of Pagination ---------- */
+.allPaymentsSlidePagination {
+    width: 100%;
+    height: 57px;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
 }
 
 .allPaymentsSlidePagination__perviousBtn,
@@ -704,14 +1004,13 @@ body {
 }
 
 .allPaymentsSlidePagination__perviousBtn i,
-.allPaymentsSlidePagination__nextBtn i{
-    width:20px ;
+.allPaymentsSlidePagination__nextBtn i {
+    width: 20px;
     height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .allPaymentsSlidePagination__pagesNumbers {
     max-width: 380px;
@@ -739,18 +1038,22 @@ body {
     align-items: center;
 }
 
-.allPaymentsSlidePagination__pagesNumbersItem--selected{
-   color: var(--color-white);
-    background:var(--color-primary) ;
+.allPaymentsSlidePagination__pagesNumbersItem--selected {
+    color: var(--color-white);
+    background: var(--color-primary);
     border: 1px solid var(--color-primary);
 }
 
-.allPaymentsSlidePagination__pagesNumbersItem:hover{
+.allPaymentsSlidePagination__pagesNumbersItem:hover {
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
 }
 
-.allPaymentsSlidePagination__morePageItem{
+.allPaymentsSlidePagination__pagesNumbersItem--selected:hover{
+    color: var(--color-white);
+}
+
+.allPaymentsSlidePagination__morePageItem {
     width: 20px;
     height: 26px;
     color: var(--color-N700);
@@ -758,9 +1061,11 @@ body {
     font-weight: 600;
     line-height: calc(var(--space-16) + var(--space-10));
     user-select: none;
-    display:flex ;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+/* ----------- End Of Pagination ----------- */
 
-/*--------------------- End Of Payment History ---------------------*/
+/*--------------------- End Of AllPayment History Year ---------------------*/
+
