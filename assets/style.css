@@ -105,7 +105,8 @@ body {
     align-items: center;
     flex-direction: column;
 
-    gap: 20px; /* Myself Property - must remove soon*/
+    gap: 20px;
+    /* Myself Property - must remove soon*/
     background: green;
     height: 3000px;
 }
@@ -763,7 +764,7 @@ body {
     gap: var(--space-4);
 }
 
-.paymentsList__itemStatus--checkIcon{
+.paymentsList__itemStatus--checkIcon {
     width: 10.75px;
     height: 10.75px;
     font-size: 10px;
@@ -815,14 +816,14 @@ body {
 
 .historyOfAllPayments {
     width: 100%;
-    width:1248px ;
+    width: 1248px;
     background: var(--color-white);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 
-    background:rgb(25, 25, 73);
+    background: rgb(25, 25, 73);
 }
 
 .historyOfAllPayments__header {
@@ -887,7 +888,7 @@ body {
 }
 
 .allPaymentsHeader__projectTitle {
-    width: 784px;
+    width: 884px;
 }
 
 .allPaymentsHeader__costTitle {
@@ -918,12 +919,29 @@ body {
     width: 100%;
     height: 56px;
     border-bottom: 1px solid var(--color-border);
-
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.allPaymentsList__projectItem:last-of-type {
+    border: none;
+    position: relative;
+}
+
+.allPaymentsList__projectItem:last-of-type::after {
+    content: ' ';
+    width: 1232px;
+    height: 1px;
+    background: var(--color-border);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
 
 }
+
 
 .allPaymentsList__itemDate,
 .allPaymentsList__itemStatus,
@@ -954,7 +972,7 @@ body {
     gap: var(--space-4);
 }
 
-.allPaymentsList__itemStatus--checkIcon{
+.allPaymentsList__itemStatus--checkIcon {
     width: 10.75px;
     height: 10.75px;
     font-size: 10px;
@@ -964,7 +982,7 @@ body {
 }
 
 .allPaymentsList__itemProjectName {
-    width: 784px;
+    width: 884px;
 }
 
 .allPaymentsList__itemCost {
@@ -989,7 +1007,6 @@ body {
 
 /* ---------- Start Of Pagination ---------- */
 .allPaymentsSlidePagination {
-    /* width: 100%; */
     width: 1232px;
     height: 57px;
     border-top: 1px solid var(--color-border);
@@ -1058,7 +1075,7 @@ body {
     border: 1px solid var(--color-primary);
 }
 
-.allPaymentsSlidePagination__pagesNumbersItem--selected:hover{
+.allPaymentsSlidePagination__pagesNumbersItem--selected:hover {
     color: var(--color-white);
 }
 
@@ -1074,7 +1091,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 /* ----------- End Of Pagination ----------- */
 
 /*--------------------- End Of AllPayment History Year ---------------------*/
-
