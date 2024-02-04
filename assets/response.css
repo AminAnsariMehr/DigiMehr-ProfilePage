@@ -1,3 +1,75 @@
-@media(max-width:320px){
-    
+@media(max-width:320px) {
+
+    .container {
+        overflow: hidden;
+    }
+
+    /*--- Start Of NavBar ---*/
+    .navBar {
+        width: 100%;
+    }
+
+    .digiMehrLogoTitleWrapper {
+        position: relative;
+    }
+
+    .digiMehrLogoWrapper__wrapperLogo {
+        width: 25.86px;
+        height: 24px;
+        border-radius: 2px 12px 12px 1px;
+    }
+
+    .digiMehrLogoWrapper__insideLogo {
+        width: 15.83px;
+        height: 13.98px;
+    }
+
+    .digiMehrLogoWrapper__titleName {
+        width: 131.58px;
+        height: 16.94px;
+        position: relative;
+        left: 15px;
+    }
+
+    .signInProfileBtn {
+        display: none;
+    }
+
+    /*--- End Of NavBar ---*/
+
+    /*--- Start Of Profile Section ---*/
+    .profileSection {
+        width: 100%;
+        padding: var(--space-24) var(--space-16);
+        gap: var(--space-24);
+    }
+
+
+    .partnerProfileData {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: var(--space-20);
+        background: aqua;
+    }
+
+    .partnerPersonalData__editBtn {
+        width:122px ;
+        height: 24px;
+        gap: 0 var(--space-12);
+        display: block;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*--- End Of Profile Section ----*/
+
+
+
+
+
+
 }
