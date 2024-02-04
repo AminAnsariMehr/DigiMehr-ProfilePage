@@ -1160,8 +1160,6 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     gap: var(--space-16);
-
-    /* background-color: white; */
 }
 
 .thankMessageSection__knowMoreBtn {

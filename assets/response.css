@@ -232,6 +232,39 @@
 
 
 
+/* -- Start Of Thank Message Section -- */
+/*--- active status ---*/
+.thankMessageSection--activeProject{
+    width: calc(100% - (2* var(--space-16)));
+    padding: var(--space-16) var(--space-12) ;
+}
+
+.thankMessageSection__title{
+width: 100%;
+line-height: var(--space-24);
+}
+
+.thankMessageSection__message{
+    width: 100%;
+    font-size: var(--font-size-small);
+}
+/*--- active status ---*/
+
+/*--- Know More ---*/
+.thankMessageSection--knowMore{
+    width: calc(100% - (2* var(--space-16)));
+    padding: var(--space-16) var(--space-12) ;
+}
+/*--- Know More ---*/
+
+/*--- successful Join ---*/
+.thankMessageSection--successfulJoin{
+    width: calc(100% - (2* var(--space-16)));
+}
+/*--- successful Join ---*/
+/* --- End Of Thank Message Section --- */
+
+
 
 
 
