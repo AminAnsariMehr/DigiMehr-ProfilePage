@@ -1,7 +1,7 @@
 @media(max-width:320px) {
 
     .container {
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     /*--- Start Of NavBar ---*/
@@ -224,51 +224,140 @@
         height: 209px;
     }
 
-    .partnerStatusProject__needChooseText{
+    .partnerStatusProject__needChooseText {
         text-align: center;
     }
+
     /*--- End Of Need Choose Project----*/
 
 
 
 
-/* -- Start Of Thank Message Section -- */
-/*--- active status ---*/
-.thankMessageSection--activeProject{
-    width: calc(100% - (2* var(--space-16)));
-    padding: var(--space-16) var(--space-12) ;
-}
+    /* -- Start Of Thank Message Section -- */
+    /*--- active status ---*/
+    .thankMessageSection--activeProject {
+        width: calc(100% - (2* var(--space-16)));
+        padding: var(--space-16) var(--space-12);
+    }
 
-.thankMessageSection__title{
-width: 100%;
-line-height: var(--space-24);
-}
+    .thankMessageSection__title {
+        width: 100%;
+        line-height: var(--space-24);
+    }
 
-.thankMessageSection__message{
-    width: 100%;
-    font-size: var(--font-size-small);
-}
-/*--- active status ---*/
+    .thankMessageSection__message {
+        width: 100%;
+        font-size: var(--font-size-small);
+    }
 
-/*--- Know More ---*/
-.thankMessageSection--knowMore{
-    width: calc(100% - (2* var(--space-16)));
-    padding: var(--space-16) var(--space-12) ;
-}
-/*--- Know More ---*/
+    /*--- active status ---*/
 
-/*--- successful Join ---*/
-.thankMessageSection--successfulJoin{
-    width: calc(100% - (2* var(--space-16)));
-}
-/*--- successful Join ---*/
-/* --- End Of Thank Message Section --- */
+    /*--- Know More ---*/
+    .thankMessageSection--knowMore {
+        width: calc(100% - (2* var(--space-16)));
+        padding: var(--space-16) var(--space-12);
+    }
 
+    /*--- Know More ---*/
 
+    /*--- successful Join ---*/
+    .thankMessageSection--successfulJoin {
+        width: calc(100% - (2* var(--space-16)));
+    }
 
-
-
+    /*--- successful Join ---*/
+    /* --- End Of Thank Message Section --- */
 
 
+
+
+
+    /*----- Start Of short Payment History -----*/
+    .historyOfPayments {
+        width: calc(100% - (2* var(--space-16)));
+        padding: 0;
+        gap: var(--space-12);
+        border-radius: 0;
+        border: none;
+    }
+
+    .historyOfPayments__header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: var(--space-10);
+    }
+
+    .paymentsHeader {
+        display: none;
+    }
+
+    .paymentsList {
+        gap: var(--space-12);
+    }
+
+    .paymentsList__projectItem {
+        padding: var(--space-10) var(--space-12);
+        min-height: 112px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--space-8);
+        position: relative;
+    }
+
+    .paymentsList__itemDate {
+        width: calc(100% - (2 * var(--space-12)));
+        height: 20px;
+        padding: 0;
+        font-size: var(--font-size-small);
+        font-weight: 700;
+        position: absolute;
+        top: 10px;
+        right: 12px;
+    }
+
+    .paymentsList__itemProjectName {
+        width: calc(100% - (2 * var(--space-12)));
+
+        height: 20px;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 12px;
+    }
+
+    .paymentsList__itemStatus {
+        width: fit-content;
+        height: 20px;
+        padding: 0;
+        position: absolute;
+        right: 12px;
+        bottom: 10px;
+    }
+
+    .paymentsList__itemCost {
+        width: fit-content;
+        height: 20px;
+        padding: 0;
+        position: absolute;
+        left: 12px;
+        bottom: 10px;
+        gap: 2px;
+    }
+    /*----- End Of short Payment History -----*/
+
+
+
+    .historyOfAllPayments {
+        /* display: none; */
+        width: 100%;
+    }
+
+
+
+    .chooseProjectText {
+        width: calc(100% - (2* var(--space-16)));
+        text-align: right;
+    }
 
 }

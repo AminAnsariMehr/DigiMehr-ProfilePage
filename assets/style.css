@@ -659,6 +659,7 @@ body {
     font-size: var(--font-size-normal);
     line-height: var(--space-24);
     font-weight: 400;
+    text-align: right;
 }
 
 .historyOfPayments__headerDateSort {
@@ -666,6 +667,7 @@ body {
     font-size: var(--font-size-tiny);
     line-height: var(--space-24);
     font-weight: 400;
+    text-align: right;
 }
 
 .paymentsListWrapper {
@@ -684,6 +686,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background-color: yellow;
 }
 
 .paymentsHeader__dateTitle,
@@ -727,7 +730,7 @@ body {
 
     gap: 10px;
     /* height: 336px; */
-    /* background-color: red; */
+    /* background-color:aqua; */
 }
 
 
@@ -833,7 +836,7 @@ body {
     justify-content: flex-start;
     align-items: center;
 
-    /* background: rgb(25, 25, 73); */
+    background: rgb(25, 25, 73);
 }
 
 .historyOfAllPayments__header {
@@ -1216,7 +1219,6 @@ body {
     font-size: var(--font-size-normal);
     line-height: var(--space-24);
     font-weight: 700;
-
 }
 
 
