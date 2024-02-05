@@ -237,6 +237,7 @@ body {
     line-height: var(--space-24);
     font-weight: 400;
 }
+
 /*-------------------------------------------- End Of Partner Status Project --------------------------------------------*/
 
 
@@ -686,7 +687,6 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: yellow;
 }
 
 .paymentsHeader__dateTitle,
@@ -835,21 +835,43 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
-    background: rgb(25, 25, 73);
 }
 
 .historyOfAllPayments__header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--space-10);
+}
+
+.historyOfAllPayments__headerGoBackLink {
+    color: var(--color-primary);
+    font-size: var(--font-size-small);
+    line-height: var(--space-20);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.historyOfAllPayments__headerTitleWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--space-8);
+}
+
+.historyOfAllPayments__headerTitleIcon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.historyOfAllPayments__headerTitle {
-    color: var(--color-darkBlue);
-    font-size: var(--font-size-normal);
-    line-height: var(--space-24);
+.historyOfAllPayments__headerTitleText {
+    color: var(--color-textDark);
+    font-size: var(--font-size-xlarge);
+    line-height: var(--space-32);
     font-weight: 400;
 }
 
@@ -1203,22 +1225,24 @@ body {
     align-items: center;
 }
 
-.thankMessageSection__projectName{
+.thankMessageSection__projectName {
     color: var(--color-primary);
     font-weight: 700;
 }
 
 .thankMessageSection__monthNumber,
 .thankMessageSection__projectCost,
-.thankMessageSection__editText{
+.thankMessageSection__editText {
     font-weight: 700;
 }
 
-.chooseProjectText{
+.chooseProjectText {
+    width: 100%;
     color: var(--color-N700);
     font-size: var(--font-size-normal);
     line-height: var(--space-24);
     font-weight: 700;
+    text-align: right;
 }
 
 

@@ -1,8 +1,5 @@
 @media(max-width:320px) {
 
-    .container {
-        /* overflow: hidden; */
-    }
 
     /*--- Start Of NavBar ---*/
     .navBar {
@@ -344,16 +341,106 @@
         bottom: 10px;
         gap: 2px;
     }
+
     /*----- End Of short Payment History -----*/
 
 
 
+
+    /*---- Start Of All Payment History -----*/
     .historyOfAllPayments {
-        /* display: none; */
-        width: 100%;
+        width: calc(100% - (2* var(--space-16)));
+        padding: 0;
+        border-radius: 0;
+        border: none; 
     }
 
+    .allPaymentsHeader {
+        display: none;
+    }
 
+    .historyOfAllPayments__headerTitleIcon {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .historyOfAllPayments__headerTitleText {
+        font-size: var(--font-size-normal);
+    }
+
+    .allPaymentsList {
+        max-height: 1150px;
+        gap: var(--space-16);
+        overflow: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    
+    .allPaymentsList::-webkit-scrollbar {
+        display: none;
+    }
+
+    .allPaymentsList__projectItem {
+        padding: var(--space-10) var(--space-12);
+        min-height: 112px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--space-8);
+        position: relative;
+    }
+
+    .allPaymentsList__itemDate {
+        width: calc(100% - (2 * var(--space-12)));
+        height: 20px;
+        padding: 0;
+        font-size: var(--font-size-small);
+        font-weight: 700;
+        position: absolute;
+        top: 10px;
+        right: 12px;
+    }
+
+    .allPaymentsList__itemProjectName {
+        width: calc(100% - (2 * var(--space-12)));
+
+        height: 20px;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 12px;
+    }
+
+    .allPaymentsList__itemStatus {
+        width: fit-content;
+        height: 20px;
+        padding: 0;
+        position: absolute;
+        right: 12px;
+        bottom: 10px;
+    }
+
+    .allPaymentsList__itemCost {
+        width: fit-content;
+        height: 20px;
+        padding: 0;
+        position: absolute;
+        left: 12px;
+        bottom: 10px;
+        gap: 2px;
+    }
+
+    .allPaymentsSlidePagination,
+    .allPaymentsList__projectItem:last-of-type::after {
+        display: none;
+    }
+
+    .allPaymentsList__projectItem:last-of-type {
+        border: 1px solid var(--color-border);
+    }
+    /*----- End Of All Payment History -----*/
 
     .chooseProjectText {
         width: calc(100% - (2* var(--space-16)));
